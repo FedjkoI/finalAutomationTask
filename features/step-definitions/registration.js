@@ -14,3 +14,11 @@ When('I press on "Sleve T-shirt"', async function() {
 When('I choose blue color', async function() {
     await page.blueColorButton.click();
 });
+
+When('I press add to cart', async function() {
+    await page.addToCartButton.click();
+});
+
+When('Pop-up appears I press "Proceed to checkout"', async function() {
+    await page.proceedToCheckout.click();
+});
