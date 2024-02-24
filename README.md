@@ -2,27 +2,25 @@
 
 This project to test website - http://www.automationpractice.pl/index.php
 
-## Install
+## How to install:
 
 To install the dependencies run:
 ```
 Run command
 ```
 npm install
-```
+````
 
-
-## Run the tests
+## How to run tests:
 
 To run the tests, run command:
 ```
 npm run wdio
 ```
 
+## How to view report:
 
-## How to wiew report
-
-First run the tests and then run commands:
+First run the tests and then run command:
 ```
 npm run allure
 ```
