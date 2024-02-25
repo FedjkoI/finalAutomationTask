@@ -5,6 +5,12 @@ export class Page {
     get blueColorButton() { return $('#color_14');}
     get addToCartButton() { return $('#add_to_cart span');}
     get proceedToCheckout() { return $('.button-medium span');}
+    get proceedToCheckoutNextButton() { return $('#center_column .right');}
+    // get signIn() { return $('#SubmitLogin span'); }
+  
+
+   
+    
 
     async open() {
         await browser.navigateTo(`http://www.automationpractice.pl/index.php`);

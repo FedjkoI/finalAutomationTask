@@ -7,7 +7,20 @@ Feature: Registration
     And I choose blue color
     And I press add to cart
     When Pop-up appears I press "Proceed to checkout"
-    And I press "Proceed to checkout"
-    Then Sign in button appears
-    And I press Čreate account"button
+    Then I press Proceed to checkout
+    # # And Sign in and Create an account buttons appears
+    
+
+
+
+    # @positive
+    # Examples: 
+    #   | visibility |
+    #   | do         |
+
+    # @negative
+    # Examples: 
+    #   | visibility |
+    #   | don't      |
+
     

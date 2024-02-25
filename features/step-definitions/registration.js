@@ -22,3 +22,16 @@ When('I press add to cart', async function() {
 When('Pop-up appears I press "Proceed to checkout"', async function() {
     await page.proceedToCheckout.click();
 });
+
+Then('I press Proceed to checkout', async function() {
+    await page.proceedToCheckoutNextButton.click();
+});
+
+// When('Sign in and Create an account buttons appears', async function() {
+//     if (visibility === "do") {
+//         await expect(page.signIn).toBeDisplayed();
+      
+//     } else {
+//         throw Error(`Visiblity ${visibility} not supported`);
+//     }
+// });
