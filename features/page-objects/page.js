@@ -6,7 +6,7 @@ export class Page {
     get addToCartButton() { return $('#add_to_cart span');}
     get proceedToCheckout() { return $('.button-medium span');}
     get proceedToCheckoutNextButton() { return $('#center_column .right');}
-    // get signIn() { return $('#SubmitLogin span'); }
+    get signIn() { return $('#SubmitLogin span'); }
   
 
    

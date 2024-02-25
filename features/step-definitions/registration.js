@@ -27,11 +27,10 @@ Then('I press Proceed to checkout', async function() {
     await page.proceedToCheckoutNextButton.click();
 });
 
-// When('Sign in and Create an account buttons appears', async function() {
-//     if (visibility === "do") {
-//         await expect(page.signIn).toBeDisplayed();
-      
-//     } else {
-//         throw Error(`Visiblity ${visibility} not supported`);
-//     }
-// });
+When('I {word} see Sign In buttons appears', async function(visibility) {
+    if (visibility === "do") {
+        await expect(page.signIn).toBeDisplayed();
+    } else {
+        throw Error(`Visiblity ${visibility} not supported`);
+    }
+});

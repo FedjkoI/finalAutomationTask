@@ -8,19 +8,16 @@ Feature: Registration
     And I press add to cart
     When Pop-up appears I press "Proceed to checkout"
     Then I press Proceed to checkout
-    # # And Sign in and Create an account buttons appears
+    And I <visibility> see Sign In buttons appears
     
 
 
 
-    # @positive
-    # Examples: 
-    #   | visibility |
-    #   | do         |
+    @positive
+    Examples: 
+      | visibility |
+      | do         |
 
-    # @negative
-    # Examples: 
-    #   | visibility |
-    #   | don't      |
+    
 
     
