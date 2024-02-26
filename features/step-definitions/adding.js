@@ -4,12 +4,31 @@ import page from "../page-objects/page.js";
 import addingPage from "../page-objects/adding.page.js";
 
 
-When('Cart quantity become: 1 Product', async function() {
-    if (visibility === "do") {
-        await expect(addingPage.cartQuantity).toBeDisplayed();
-    } else if (visibility === "don't") {
-        await expect(addingPage.cartQuantity).not.toBeDisplayed();
-    } else {
-        throw Error(`Visiblity ${visibility} not supported`);
-    }
+When('I see one Product in Cart', async function() {
+    let quantity = '1';
+    let cartQuantity = await addingPage.cartQuantity;
+    let quantityOfPurchase = await cartQuantity.getAttribute('1');
+if (quantityOfPurchase == quantity){
+    console.log('The nomber match!');
+}else{
+    console.log('The number do not match. Element text is:', quantityOfPurchase);
+}
 });
+
+
+When('I press Plus button to add second product', async function() {
+    await addingPage.plusButton.click();
+});  
+
+
+Then('Cart will increase on 1 Product as well', async function() {
+    let quantity = '2';
+    let cartQuantity = await addingPage.cartQuantity;
+    let quantityOfPurchase = await cartQuantity.getAttribute('2');
+if (quantityOfPurchase == quantity){
+    console.log('The nomber match!');
+}else{
+    console.log('The number do not match. Element text is:', quantityOfPurchase);
+}
+});
+
