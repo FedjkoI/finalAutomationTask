@@ -1,5 +1,5 @@
 Feature: Registration
-
+  @Test1
   Scenario: User can not proseed with checkout without registration
     Given I am on the home page
     And I press on Women button

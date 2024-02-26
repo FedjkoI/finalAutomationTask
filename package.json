@@ -11,8 +11,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "allure": "allure serve allure-results",
-    "tag": "wdio run ./wdio.conf.js --cucumberOpts.tags"
+    "allure": "allure serve",
+    "test": "wdio ./wdio.conf.js --cucumberOpts.tagExpression"
   },
   "dependencies": {
     "allure-commandline": "^2.27.0"
