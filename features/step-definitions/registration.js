@@ -13,7 +13,9 @@ When('I press on "Sleve T-shirt"', async function() {
 
 When('I choose blue color', async function() {
     await page.blueColorButton.click();
+    await browser.refresh();
 });
+
 
 When('I press add to cart', async function() {
     await page.addToCartButton.click();
