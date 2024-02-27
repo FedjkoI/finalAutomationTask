@@ -13,23 +13,6 @@ When('I click search button', async function() {
 
 
 
-// Then('Page appears only with products containing text "Blouse"', async function() {
-// const inputWord = await searchPage.inputWord;
-// const elementText = await inputWord.getText();
-// const myString = 'Blouse';
-
-// if(elementText === myString) {
-//   console.log('The texts match!');
-// //   await inputWord.toBeDisplayed();
-// } else {
-//     console.log('The texts do not match. Element text is:', elementText);
-// }
-
-// });
-
-
-
-
 Then('Page appears only with products containing text {string}', async function(word) {
 const inputWord = await searchPage.inputWord;
 const elementText = await inputWord.getText();
@@ -37,6 +20,6 @@ const elementText = await inputWord.getText();
 if(elementText === word) {
   console.log('The texts match!');
 } else {
-    console.log('The texts do not match. Element text is:', elementText);
+    console.log('The text do not match. Element text is:', elementText);
 }
 });

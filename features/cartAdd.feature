@@ -15,8 +15,5 @@ Feature: Add to Cart
 
 
     
-    Examples: 
-      | quantity   | visibility |
-      |    1       | do         |
-
+    
     

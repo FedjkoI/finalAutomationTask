@@ -6,10 +6,11 @@ Feature: Search field
     When I enter <word> into search field
     And I click search button
     Then Page appears only with products containing text <word>
+   
 
     
     Examples: 
-      | word     | visibility| message|
-      | "Blouse" | do        |"Blouse"|
+      | word     | 
+      | "Blouse" | 
 
     

@@ -17,10 +17,13 @@ When('I choose blue color', async function() {
 
 When('I press add to cart', async function() {
     await page.addToCartButton.click();
+    await browser.pause(20);
+    
 });
 
 When('Pop-up appears I press "Proceed to checkout"', async function() {
     await page.proceedToCheckout.click();
+    await browser.pause(20);
 });
 
 Then('I press Proceed to checkout', async function() {

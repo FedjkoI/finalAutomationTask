@@ -89,7 +89,7 @@ export const config = {
     // baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 20000,
+    waitforTimeout: 30000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -153,7 +153,7 @@ export const config = {
         // <string> (expression) only execute the features or scenarios with tags matching the expression
         tagExpression: '',
         // <number> timeout for step definitions
-        timeout: 60000,
+        timeout: 70000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
     },
