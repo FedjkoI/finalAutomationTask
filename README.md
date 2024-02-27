@@ -15,8 +15,15 @@ To run the tests, run command
 npm run wdio
 ```
 
+## How to run scenario
+To run exact scenario, run command
+```
+npm run test "@tag"
+```
+
 ## How to view report
 First run the tests and then run command
 ```
 npm run allure
 ```
+
