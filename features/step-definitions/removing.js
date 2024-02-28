@@ -20,7 +20,7 @@ When('I press + button', async function() {
 Then('Cart will contains 6 Products', async function() {
     let quantity = '6';
     let cartQuantity = await addingPage.cartQuantity; 
-    let quantityOfPurchase = await cartQuantity.getAttribute('6');
+    let quantityOfPurchase = await cartQuantity.getAttribute('#product_1_2_0_0 .grey');
 if (quantityOfPurchase == quantity){
     console.log('The nomber match!');
 }else{
@@ -37,11 +37,10 @@ When('I press "-" button to delete 1 quantity', async function() {
 Then('Cart will contain 5 Products', async function() {
     let quantity = '5';
     let cartQuantity = await addingPage.cartQuantity; 
-    let quantityOfPurchase = await cartQuantity.getAttribute('5');
+    let quantityOfPurchase = await cartQuantity.getAttribute('#product_1_2_0_0 .grey');
 if (quantityOfPurchase == quantity){
     console.log('The nomber match!');
 }else{
     console.log('The number do not match. Element text is:', quantityOfPurchase);
 }
 });
-
