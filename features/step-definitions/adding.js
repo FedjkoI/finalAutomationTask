@@ -7,7 +7,7 @@ import addingPage from "../page-objects/adding.page.js";
 When('I see one Product in Cart', async function() {
     let quantity = '1';
     let cartQuantity = await addingPage.cartQuantity;
-    let quantityOfPurchase = await cartQuantity.getAttribute('1');
+    let quantityOfPurchase = await cartQuantity.getAttribute('input.cart_quantity_input');
 if (quantityOfPurchase == quantity){
     console.log('The nomber match!');
 }else{
@@ -24,11 +24,13 @@ When('I press Plus button to add second product', async function() {
 Then('Cart will increase on 1 Product as well', async function() {
     let quantity = '2';
     let cartQuantity = await addingPage.cartQuantity;
-    let quantityOfPurchase = await cartQuantity.getAttribute('2');
+    let quantityOfPurchase = await cartQuantity.getAttribute('input.cart_quantity_input');
 if (quantityOfPurchase == quantity){
     console.log('The nomber match!');
 }else{
     console.log('The number do not match. Element text is:', quantityOfPurchase);
 }
 });
+
+
 
