@@ -19,7 +19,7 @@ When('I choose blue color', async function() {
 
 When('I press add to cart', async function() {
     await page.addToCartButton.click();
-    await browser.pause(20);
+    await browser.pause(1000);
     
 });
 
