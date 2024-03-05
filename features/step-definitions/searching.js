@@ -14,6 +14,8 @@ When('I click search button', async function() {
 
 
 Then('Page appears only with products containing text {string}', async function(word) {
+// REVIEW: There is a little problem with this, it only validates the first result.
+// What if there are multiple search results?
 const inputWord = await searchPage.inputWord;
 const elementText = await inputWord.getText();
 

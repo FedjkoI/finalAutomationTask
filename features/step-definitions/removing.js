@@ -35,8 +35,10 @@ When('I press "-" button to delete 1 quantity', async function() {
 
 
 Then('Cart will contain 5 Products', async function() {
+    // REVIEW: This is not validating anything
     let quantity = '5';
     let cartQuantity = await addingPage.cartQuantity; 
+    // REVIEW: "'#product_1_2_0_0 .grey" is not element attribute. Look up what is "attribute" first
     let quantityOfPurchase = await cartQuantity.getAttribute('#product_1_2_0_0 .grey');
 if (quantityOfPurchase == quantity){
     console.log('The nomber match!');
