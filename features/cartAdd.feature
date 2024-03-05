@@ -3,6 +3,7 @@ Feature: Add to Cart
   @Test3
   Scenario: User is able to add product in a cart and it will show correct quantity
     Given I am on the home page
+    # "I press" should not be Given steps
     And I press on Women button
     And I press on "Sleve T-shirt"
     And I choose blue color
